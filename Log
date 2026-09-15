@@ -1,1 +1,5 @@
-
+September 16
+First try included merging the skeleton datas of the Le2i and UR Fall datasets, and replacing graph convolution with graph shift.
+The results were bad; Specifically worse than when the datasets were separate. Of course can't say merging was the cause;
+The datasets were processed differently. Ur Fall had coordinate normalization, and a lower cnofidence threshold for the joint.
+Tomorrow will try to equallize the datas.
