@@ -1,5 +1,12 @@
 September 16
 First try included merging the skeleton datas of the Le2i and UR Fall datasets, and replacing graph convolution with graph shift.
-The results were bad; Specifically worse than when the datasets were separate. Of course can't say merging was the cause;
+The results were bad - 75% accuracy; Specifically worse than when the datasets were separate. Of course can't say merging was the cause;
 The datasets were processed differently. Ur Fall had coordinate normalization, and a lower cnofidence threshold for the joint.
 Tomorrow will try to equallize the datas.
+
+
+September 17
+Processed the UR Fall Dataset with method used for Le2i (NO coordiante normalization + 50% joint confidence threshhold 
++ 70% valid body joints for a frame). The results were better than the Sep16 experiment - 87% accuracy - but the model still isnt 
+reaching its full potentil of learning and overfits. In training it reaches 96% of accuracy.
+So I tried
